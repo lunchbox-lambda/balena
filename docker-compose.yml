@@ -1,6 +1,6 @@
 version: "2.1"
 volumes: 
-    resin-data
+    resin-data:
 services:
   lunchbox:
     image: lunchboxlambda/brain:1.1.1
