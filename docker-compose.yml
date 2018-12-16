@@ -4,12 +4,8 @@ volumes:
 services:
   lunchbox:
     image: lunchboxlambda/brain:1.1.1
-    environment:
-      - LBOX_COMPUTER_NAME=lbox-poseidon
-      - PLATFORMIO_BOARD_ID=uno
-      - TZ=Europe/Stockholm
-#    devices:
-#      - /dev/1-1.2:/dev/controller
+    devices:
+      - /dev/ttyUSB0:/dev/controller
     ports:
       - 2280:80
     volumes:
