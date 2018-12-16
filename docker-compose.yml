@@ -10,4 +10,4 @@ services:
       - 2280:80
     volumes:
       - resin-data:/data
-    restart: no
+    restart: always
