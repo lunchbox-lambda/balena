@@ -7,7 +7,7 @@ services:
     devices:
       - /dev/ttyUSB0:/dev/controller
     ports:
-      - 2280:80
+      - 80:80
     volumes:
       - resin-data:/data
     restart: always
