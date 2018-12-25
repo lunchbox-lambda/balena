@@ -3,7 +3,7 @@ volumes:
     resin-data:
 services:
   lunchbox:
-    image: lunchboxlambda/brain:1.1.1
+    image: lunchboxlambda/brain:1.2.0
     devices:
       - /dev/ttyUSB0:/dev/controller
     ports:
